@@ -335,6 +335,8 @@ jobs:
 
   # Select the Linux Builds based on PR Arch Label
   Linux-Arch:
+    # Staging E2E validates Fetch/report/comment without rerunning the full matrix.
+    if: ${{ false }}
     uses: zhn-test/nuttx-apps/.github/workflows/arch.yml@pr-depends-on-base-20260802
     needs: Fetch-Source
     with:
@@ -509,6 +511,8 @@ jobs:
 
   # Select the macOS Builds based on PR Arch Label
   macOS-Arch:
+    # Staging E2E validates Fetch/report/comment without rerunning the full matrix.
+    if: ${{ false }}
     uses: zhn-test/nuttx-apps/.github/workflows/arch.yml@pr-depends-on-base-20260802
     needs: Fetch-Source
     with:
@@ -572,6 +576,8 @@ jobs:
 
   # Select the msys2 Builds based on PR Arch Label
   msys2-Arch:
+    # Staging E2E validates Fetch/report/comment without rerunning the full matrix.
+    if: ${{ false }}
     uses: zhn-test/nuttx-apps/.github/workflows/arch.yml@pr-depends-on-base-20260802
     needs: Fetch-Source
     with:
@@ -655,6 +661,8 @@ jobs:
 
   # Select the msvc Builds based on PR Arch Label
   msvc-Arch:
+    # Staging E2E validates Fetch/report/comment without rerunning the full matrix.
+    if: ${{ false }}
     uses: zhn-test/nuttx-apps/.github/workflows/arch.yml@pr-depends-on-base-20260802
     needs: Fetch-Source
     with:
