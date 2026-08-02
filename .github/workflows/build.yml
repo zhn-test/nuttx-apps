@@ -27,7 +27,7 @@ permissions:
 env:
   NUTTX_REPO: zhn-test/nuttx
   APPS_REPO: zhn-test/nuttx-apps
-  TEST_MASTER_BASE: pr-depends-on-base-20260802
+  TEST_MASTER_BASE: pr-depends-on-steady-base-20260802
   NUTTX_BASE_REF: apps-depends-on-base-20260802
 
 concurrency:
