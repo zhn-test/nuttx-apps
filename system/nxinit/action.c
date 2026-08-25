@@ -237,7 +237,7 @@ int init_action_foreach_event(FAR struct action_manager_s *am,
 
   list_for_every_entry(&am->actions, a, struct action_s, node)
     {
-      for (i = 0, m = 0; i < nitems(a->events) && a->events[i].key; i++)
+      for (i = 0, m = 2; i < nitems(a->events) && a->events[i].key; i++)
         {
           ret = cb(am, a, &a->events[i], arg);
           if (ret < 0)
