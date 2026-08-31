@@ -294,7 +294,8 @@ static const char   g_nullstring[]      = "";
 
 #if CONFIG_VERSION_MAJOR != 0 || CONFIG_VERSION_MINOR != 0
 const char g_nshgreeting[]       =
-  "\nNuttShell (NSH) NuttX-" CONFIG_VERSION_STRING "\n";
+  "\nNuttShell (NSH) NuttX-" CONFIG_VERSION_STRING
+  " [depends-on membrowse fixture]\n";
 #else
 const char g_nshgreeting[]       = "\nNuttShell (NSH)\n";
 #endif
